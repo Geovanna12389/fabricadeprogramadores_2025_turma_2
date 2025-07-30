@@ -1,0 +1,21 @@
+a = 3
+b = 2 
+c = 4 
+d = 10 
+def operaçoes():   
+    print (a+b)
+    print(a-b)
+    print(a*b)
+    print(a**2)
+    print(d % a)
+operaçoes()
+    print(a>=b)
+    print(a==b)
+    print(c<=b)
+    print(c!=d)
+    print(a!+d)
+operaçoes()
+    print(a == b and c!= d)
+    print(not(d>20))
+    print(not(1+ 1 == 2))
+    print(c + b == a!= d)
