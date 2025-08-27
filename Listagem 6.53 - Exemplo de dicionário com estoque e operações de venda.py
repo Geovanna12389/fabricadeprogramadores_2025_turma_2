@@ -1,13 +1,15 @@
 estoque={   "tomate": [ 1000, 2.30],
             "alface": [ 500, 0.45],
-			"batata": [ 2001, 1.20],
-			"feijão": [ 100, 1.50] }
+			      "batata": [ 2001, 1.20],
+			      "feijão": [ 100, 1.50] }
 
-venda = [ ["tomate", 5], ["batata", 10], ["alface",5] ]
+produto = input("digite o produto selecionado: "),
+quantidade = int(input("digite a quantidade: "))
+venda = [ [produto, quantidade]]
 total = 0
-print("Vendas:\n")
-
-for operação in venda:
+if produto in estoque:
+  print("Vendas:\n")
+  for operação in venda:
     produto, quantidade = operação 
     preço = estoque[produto][1] 
     custo = preço * quantidade
@@ -15,6 +17,8 @@ for operação in venda:
 		(produto, quantidade,preço,custo))
     estoque[produto][0] -= quantidade 
     total+=custo
+else:
+    print("não temos este produto no estoque!")
 print(" Custo total: %21.2f\n" % total)
 print("Estoque:\n")
 for chave, dados in estoque.items(): 
