@@ -1,0 +1,21 @@
+import pyautogui, mouseinfo
+
+#mouseinfo.mouseInfo()
+
+pyautogui.moveTo(1225,1053, duration=1)
+pyautogui.click()
+pyautogui.moveTo(1145,373, duration=1)
+pyautogui.click()
+pyautogui.moveTo(1145,455, duration=1)
+pyautogui.click()
+pyautogui.moveTo(1023,299, duration=1)
+pyautogui.click()
+pyautogui.sleep(6)
+pyautogui.moveTo(1247,115, duration=1)
+pyautogui.click()
+pyautogui.write("tonigon")
+pyautogui.sleep(2)
+pyautogui.moveTo(1258,163, duration=1)
+pyautogui.click()
+pyautogui.moveTo(1224,807, duration=1)
+pyautogui.click()
