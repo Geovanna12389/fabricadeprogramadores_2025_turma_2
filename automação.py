@@ -1,5 +1,5 @@
 import pyautogui, mouseinfo
-
+tonigon
 #mouseinfo.mouseInfo()
 
 pyautogui.moveTo(1225,1053, duration=1)
